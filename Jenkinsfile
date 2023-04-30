@@ -10,8 +10,7 @@ pipeline{
         stage('Trying shell script commands')
         {
             steps{
-                echo 'The workspace directory is $WORKSPACE'
-                ls $WORKSPACE
+                sh './shell_scripts/hello.sh'
             }
         }
         stage('Read json file')
